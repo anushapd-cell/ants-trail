@@ -1,0 +1,1124 @@
+{
+  "schema_version": "1.0",
+  "_note": "Mandatory courses are defined once at top level and merged by the engine at runtime. Profile courses are role-specific additions only. Profile key format: {tool}_{level}",
+
+  "mandatory_courses": [
+    {
+      "course_id": "MANDATORY_001",
+      "title": "What is AI / Generative AI — Foundations",
+      "platform": "Udemy",
+      "url": "https://www.udemy.com/course/generative-ai-for-beginners/",
+      "duration_minutes": 90,
+      "mandatory": true,
+      "tags": ["AI basics", "Gen AI", "foundations"],
+      "sequence_order": 1
+    },
+    {
+      "course_id": "MANDATORY_002",
+      "title": "Prompt Engineering Fundamentals",
+      "platform": "Anthropic Docs",
+      "url": "https://docs.anthropic.com/en/docs/build-with-claude/prompt-engineering/overview",
+      "duration_minutes": 60,
+      "mandatory": true,
+      "tags": ["prompt engineering", "AI basics"],
+      "sequence_order": 2
+    },
+    {
+      "course_id": "MANDATORY_003",
+      "title": "Prompting Guide for QA Engineers",
+      "platform": "GitHub",
+      "url": "https://github.com/dair-ai/Prompt-Engineering-Guide",
+      "duration_minutes": 60,
+      "mandatory": true,
+      "tags": ["prompt engineering", "QA"],
+      "sequence_order": 3
+    },
+    {
+      "course_id": "MANDATORY_004",
+      "title": "AI for Test Case Generation (GitHub Copilot)",
+      "platform": "GitHub Docs",
+      "url": "https://docs.github.com/en/copilot",
+      "duration_minutes": 60,
+      "mandatory": true,
+      "tags": ["AI testing", "copilot", "test generation"],
+      "sequence_order": 4
+    },
+    {
+      "course_id": "MANDATORY_005",
+      "title": "Playwright — Getting Started (Official Docs)",
+      "platform": "Playwright Docs",
+      "url": "https://playwright.dev/docs/intro",
+      "duration_minutes": 240,
+      "mandatory": true,
+      "tags": ["playwright", "automation", "fundamentals"],
+      "sequence_order": 5
+    },
+    {
+      "course_id": "MANDATORY_006",
+      "title": "Agentic AI Introduction for Testers",
+      "platform": "Hugging Face",
+      "url": "https://huggingface.co/learn/agents-course",
+      "duration_minutes": 120,
+      "mandatory": true,
+      "tags": ["agentic AI", "AI agents", "QA"],
+      "sequence_order": 6
+    }
+  ],
+
+  "profiles": [
+
+    {
+      "profile_key": "manual_junior",
+      "display_label": "Manual QA (Junior)",
+      "role_tags": ["manual", "junior"],
+      "experience_level": "junior",
+      "primary_tool": "Manual QA",
+      "target_role": "Junior Automation Engineer",
+      "duration_weeks": "8–12",
+      "key_outcome": "Write & run Playwright E2E tests; use AI to generate test cases from requirements",
+      "courses": [
+        {
+          "course_id": "MANUAL_JR_001",
+          "title": "JavaScript & TypeScript Basics — The Odin Project",
+          "platform": "Web",
+          "url": "https://www.theodinproject.com/paths/foundations",
+          "duration_minutes": 1500,
+          "mandatory": false,
+          "tags": ["javascript", "typescript", "prerequisite"],
+          "sequence_order": 1
+        },
+        {
+          "course_id": "MANUAL_JR_002",
+          "title": "Playwright Full Course 2026 (TS/JS)",
+          "platform": "YouTube",
+          "url": "https://youtube.com/playlist?list=PL83cimSRP5ZmwhC6u255huRwSi9tlP-nc",
+          "duration_minutes": 600,
+          "mandatory": false,
+          "tags": ["playwright", "typescript", "javascript"],
+          "sequence_order": 2
+        },
+        {
+          "course_id": "MANUAL_JR_003",
+          "title": "Try Playwright Online — Interactive Playground",
+          "platform": "Tool",
+          "url": "https://try.playwright.tech",
+          "duration_minutes": 60,
+          "mandatory": false,
+          "tags": ["playwright", "practice", "sandbox"],
+          "sequence_order": 3
+        },
+        {
+          "course_id": "MANUAL_JR_004",
+          "title": "VS Code Playwright Extension Setup",
+          "platform": "VS Code Marketplace",
+          "url": "https://marketplace.visualstudio.com/items?itemName=ms-playwright.playwright",
+          "duration_minutes": 30,
+          "mandatory": false,
+          "tags": ["playwright", "vscode", "tooling"],
+          "sequence_order": 4
+        },
+        {
+          "course_id": "MANUAL_JR_005",
+          "title": "Google Prompting Essentials",
+          "platform": "Google Free Course",
+          "url": "https://learndigital.withgoogle.com",
+          "duration_minutes": 240,
+          "mandatory": false,
+          "tags": ["prompt engineering", "Google", "AI basics"],
+          "sequence_order": 5
+        },
+        {
+          "course_id": "MANUAL_JR_006",
+          "title": "Reflect No-Code Test Automation",
+          "platform": "Reflect Docs",
+          "url": "https://reflect.run/docs",
+          "duration_minutes": 120,
+          "mandatory": false,
+          "tags": ["no-code", "reflect", "automation"],
+          "sequence_order": 6
+        },
+        {
+          "course_id": "MANUAL_JR_007",
+          "title": "Zephyr Scale for Jira — Test Management Basics",
+          "platform": "SmartBear Docs",
+          "url": "https://smartbear.com/learn/test-management",
+          "duration_minutes": 120,
+          "mandatory": false,
+          "tags": ["zephyr", "test management", "jira"],
+          "sequence_order": 7
+        }
+      ]
+    },
+
+    {
+      "profile_key": "tosca_junior",
+      "display_label": "Tosca Engineer (Junior)",
+      "role_tags": ["tosca", "automation", "junior"],
+      "experience_level": "junior",
+      "primary_tool": "Tosca",
+      "target_role": "Junior AI-Enabled Test Engineer",
+      "duration_weeks": "8–12",
+      "key_outcome": "Transition from Tosca to Playwright; use AI for test case generation",
+      "courses": [
+        {
+          "course_id": "TOSCA_JR_001",
+          "title": "JavaScript & TypeScript Basics — The Odin Project",
+          "platform": "Web",
+          "url": "https://www.theodinproject.com/paths/foundations",
+          "duration_minutes": 1500,
+          "mandatory": false,
+          "tags": ["javascript", "typescript", "prerequisite"],
+          "sequence_order": 1
+        },
+        {
+          "course_id": "TOSCA_JR_002",
+          "title": "Playwright Full Course 2026 (TS/JS)",
+          "platform": "YouTube",
+          "url": "https://youtube.com/playlist?list=PL83cimSRP5ZmwhC6u255huRwSi9tlP-nc",
+          "duration_minutes": 600,
+          "mandatory": false,
+          "tags": ["playwright", "typescript"],
+          "sequence_order": 2
+        },
+        {
+          "course_id": "TOSCA_JR_003",
+          "title": "Tosca to Playwright Migration — Concepts & Bridging",
+          "platform": "Internal",
+          "url": null,
+          "duration_minutes": 60,
+          "mandatory": false,
+          "tags": ["tosca", "playwright", "migration"],
+          "sequence_order": 3
+        },
+        {
+          "course_id": "TOSCA_JR_004",
+          "title": "Reflect No-Code Test Automation",
+          "platform": "Reflect Docs",
+          "url": "https://reflect.run/docs",
+          "duration_minutes": 120,
+          "mandatory": false,
+          "tags": ["no-code", "reflect"],
+          "sequence_order": 4
+        },
+        {
+          "course_id": "TOSCA_JR_005",
+          "title": "Zephyr Scale for Jira — Test Management Basics",
+          "platform": "SmartBear Docs",
+          "url": "https://smartbear.com/learn/test-management",
+          "duration_minutes": 120,
+          "mandatory": false,
+          "tags": ["zephyr", "test management"],
+          "sequence_order": 5
+        }
+      ]
+    },
+
+    {
+      "profile_key": "tosca_mid",
+      "display_label": "Tosca Engineer (Mid-Level)",
+      "role_tags": ["tosca", "automation", "mid"],
+      "experience_level": "mid",
+      "primary_tool": "Tosca",
+      "target_role": "AI-Enabled Automation Engineer",
+      "duration_weeks": "10–14",
+      "key_outcome": "Full Playwright framework with API layer; AI-assisted code generation; CI/CD integrated suite",
+      "courses": [
+        {
+          "course_id": "TOSCA_MID_001",
+          "title": "Playwright Fixtures, POM & Parallel Runs",
+          "platform": "Playwright Docs",
+          "url": "https://playwright.dev/docs/test-fixtures",
+          "duration_minutes": 240,
+          "mandatory": false,
+          "tags": ["playwright", "POM", "fixtures", "parallel"],
+          "sequence_order": 1
+        },
+        {
+          "course_id": "TOSCA_MID_002",
+          "title": "Playwright API Testing",
+          "platform": "Playwright Docs",
+          "url": "https://playwright.dev/docs/api-testing",
+          "duration_minutes": 240,
+          "mandatory": false,
+          "tags": ["playwright", "API testing"],
+          "sequence_order": 2
+        },
+        {
+          "course_id": "TOSCA_MID_003",
+          "title": "Playwright Trace Viewer & Debugging",
+          "platform": "Playwright Docs",
+          "url": "https://playwright.dev/docs/trace-viewer",
+          "duration_minutes": 120,
+          "mandatory": false,
+          "tags": ["playwright", "debugging", "trace viewer"],
+          "sequence_order": 3
+        },
+        {
+          "course_id": "TOSCA_MID_004",
+          "title": "Tosca to Playwright Migration — Advanced Patterns",
+          "platform": "Internal",
+          "url": null,
+          "duration_minutes": 120,
+          "mandatory": false,
+          "tags": ["tosca", "playwright", "migration"],
+          "sequence_order": 4
+        },
+        {
+          "course_id": "TOSCA_MID_005",
+          "title": "GitHub Copilot for Test Automation",
+          "platform": "GitHub Docs",
+          "url": "https://docs.github.com/en/copilot/using-github-copilot",
+          "duration_minutes": 240,
+          "mandatory": false,
+          "tags": ["copilot", "AI", "code generation"],
+          "sequence_order": 5
+        },
+        {
+          "course_id": "TOSCA_MID_006",
+          "title": "TestComplete HaloAI Features",
+          "platform": "SmartBear Docs",
+          "url": "https://smartbear.com/ai",
+          "duration_minutes": 120,
+          "mandatory": false,
+          "tags": ["testcomplete", "HaloAI", "SmartBear"],
+          "sequence_order": 6
+        },
+        {
+          "course_id": "TOSCA_MID_007",
+          "title": "Docker for QA Engineers — Get Started",
+          "platform": "Docker Docs",
+          "url": "https://docs.docker.com/get-started",
+          "duration_minutes": 240,
+          "mandatory": false,
+          "tags": ["docker", "CI/CD", "infrastructure"],
+          "sequence_order": 7
+        },
+        {
+          "course_id": "TOSCA_MID_008",
+          "title": "GitHub Actions for Test Automation",
+          "platform": "GitHub Docs",
+          "url": "https://docs.github.com/en/actions",
+          "duration_minutes": 240,
+          "mandatory": false,
+          "tags": ["github actions", "CI/CD", "automation"],
+          "sequence_order": 8
+        }
+      ]
+    },
+
+    {
+      "profile_key": "testcomplete_mid",
+      "display_label": "TestComplete Engineer (Mid-Level)",
+      "role_tags": ["testcomplete", "automation", "mid"],
+      "experience_level": "mid",
+      "primary_tool": "TestComplete",
+      "target_role": "AI-Enabled Automation Engineer",
+      "duration_weeks": "10–14",
+      "key_outcome": "Leverage SmartBear HaloAI; transition to Playwright; integrate AI code generation into workflow",
+      "courses": [
+        {
+          "course_id": "TC_MID_001",
+          "title": "TestComplete HaloAI — Full Feature Overview",
+          "platform": "SmartBear Docs",
+          "url": "https://smartbear.com/ai",
+          "duration_minutes": 180,
+          "mandatory": false,
+          "tags": ["testcomplete", "HaloAI", "SmartBear", "AI testing"],
+          "sequence_order": 1
+        },
+        {
+          "course_id": "TC_MID_002",
+          "title": "Playwright Fixtures, POM & Parallel Runs",
+          "platform": "Playwright Docs",
+          "url": "https://playwright.dev/docs/test-fixtures",
+          "duration_minutes": 240,
+          "mandatory": false,
+          "tags": ["playwright", "POM", "parallel"],
+          "sequence_order": 2
+        },
+        {
+          "course_id": "TC_MID_003",
+          "title": "Playwright API Testing",
+          "platform": "Playwright Docs",
+          "url": "https://playwright.dev/docs/api-testing",
+          "duration_minutes": 240,
+          "mandatory": false,
+          "tags": ["playwright", "API testing"],
+          "sequence_order": 3
+        },
+        {
+          "course_id": "TC_MID_004",
+          "title": "GitHub Copilot for Test Automation",
+          "platform": "GitHub Docs",
+          "url": "https://docs.github.com/en/copilot/using-github-copilot",
+          "duration_minutes": 240,
+          "mandatory": false,
+          "tags": ["copilot", "AI", "code generation"],
+          "sequence_order": 4
+        },
+        {
+          "course_id": "TC_MID_005",
+          "title": "SmartBear Modern Tools Ecosystem (2026)",
+          "platform": "SmartBear Docs",
+          "url": "https://smartbear.com/solutions",
+          "duration_minutes": 120,
+          "mandatory": false,
+          "tags": ["smartbear", "tools", "ecosystem"],
+          "sequence_order": 5
+        },
+        {
+          "course_id": "TC_MID_006",
+          "title": "Docker for QA Engineers — Get Started",
+          "platform": "Docker Docs",
+          "url": "https://docs.docker.com/get-started",
+          "duration_minutes": 240,
+          "mandatory": false,
+          "tags": ["docker", "CI/CD"],
+          "sequence_order": 6
+        },
+        {
+          "course_id": "TC_MID_007",
+          "title": "GitHub Actions for Test Automation",
+          "platform": "GitHub Docs",
+          "url": "https://docs.github.com/en/actions",
+          "duration_minutes": 240,
+          "mandatory": false,
+          "tags": ["github actions", "CI/CD"],
+          "sequence_order": 7
+        }
+      ]
+    },
+
+    {
+      "profile_key": "perf_mid",
+      "display_label": "Performance Tester / JMeter (Mid-Level)",
+      "role_tags": ["performance", "jmeter", "mid"],
+      "experience_level": "mid",
+      "primary_tool": "JMeter",
+      "target_role": "AI-Enabled Performance & NFR Test Engineer",
+      "duration_weeks": "10–14",
+      "key_outcome": "Extend into Security + Accessibility + NFR testing using AI tools; add Playwright for E2E coverage",
+      "courses": [
+        {
+          "course_id": "PERF_MID_001",
+          "title": "Playwright API Testing for Performance Engineers",
+          "platform": "Playwright Docs",
+          "url": "https://playwright.dev/docs/api-testing",
+          "duration_minutes": 240,
+          "mandatory": false,
+          "tags": ["playwright", "API testing", "performance"],
+          "sequence_order": 1
+        },
+        {
+          "course_id": "PERF_MID_002",
+          "title": "Playwright Parallel & CI/CD Integration",
+          "platform": "Playwright Docs",
+          "url": "https://playwright.dev/docs/ci",
+          "duration_minutes": 240,
+          "mandatory": false,
+          "tags": ["playwright", "CI/CD", "parallel"],
+          "sequence_order": 2
+        },
+        {
+          "course_id": "PERF_MID_003",
+          "title": "API Testing with Postman — Learning Center",
+          "platform": "Postman Docs",
+          "url": "https://learning.postman.com",
+          "duration_minutes": 240,
+          "mandatory": false,
+          "tags": ["postman", "API testing"],
+          "sequence_order": 3
+        },
+        {
+          "course_id": "PERF_MID_004",
+          "title": "OpenAPI / Swagger Basics",
+          "platform": "Swagger Docs",
+          "url": "https://swagger.io/docs",
+          "duration_minutes": 120,
+          "mandatory": false,
+          "tags": ["swagger", "OpenAPI", "API"],
+          "sequence_order": 4
+        },
+        {
+          "course_id": "PERF_MID_005",
+          "title": "GitHub Copilot for Test Automation",
+          "platform": "GitHub Docs",
+          "url": "https://docs.github.com/en/copilot/using-github-copilot",
+          "duration_minutes": 240,
+          "mandatory": false,
+          "tags": ["copilot", "AI"],
+          "sequence_order": 5
+        },
+        {
+          "course_id": "PERF_MID_006",
+          "title": "Docker for QA Engineers",
+          "platform": "Docker Docs",
+          "url": "https://docs.docker.com/get-started",
+          "duration_minutes": 240,
+          "mandatory": false,
+          "tags": ["docker", "CI/CD"],
+          "sequence_order": 6
+        },
+        {
+          "course_id": "PERF_MID_007",
+          "title": "GitHub Actions for Testing",
+          "platform": "GitHub Docs",
+          "url": "https://docs.github.com/en/actions",
+          "duration_minutes": 240,
+          "mandatory": false,
+          "tags": ["github actions", "CI/CD"],
+          "sequence_order": 7
+        }
+      ]
+    },
+
+    {
+      "profile_key": "api_mid",
+      "display_label": "API / Postman Tester (Mid-Level)",
+      "role_tags": ["api", "postman", "mid"],
+      "experience_level": "mid",
+      "primary_tool": "Postman",
+      "target_role": "AI-Enabled API & Automation Engineer",
+      "duration_weeks": "10–14",
+      "key_outcome": "Full API test automation with Playwright; AI-assisted contract testing; CI/CD pipeline integration",
+      "courses": [
+        {
+          "course_id": "API_MID_001",
+          "title": "Playwright API Testing — Deep Dive",
+          "platform": "Playwright Docs",
+          "url": "https://playwright.dev/docs/api-testing",
+          "duration_minutes": 300,
+          "mandatory": false,
+          "tags": ["playwright", "API testing"],
+          "sequence_order": 1
+        },
+        {
+          "course_id": "API_MID_002",
+          "title": "OpenAPI / Swagger — Full Docs",
+          "platform": "Swagger Docs",
+          "url": "https://swagger.io/docs",
+          "duration_minutes": 180,
+          "mandatory": false,
+          "tags": ["swagger", "OpenAPI"],
+          "sequence_order": 2
+        },
+        {
+          "course_id": "API_MID_003",
+          "title": "OpenAI Prompt Engineering Guide",
+          "platform": "OpenAI Docs",
+          "url": "https://platform.openai.com/docs/guides/prompt-engineering",
+          "duration_minutes": 180,
+          "mandatory": false,
+          "tags": ["prompt engineering", "OpenAI"],
+          "sequence_order": 3
+        },
+        {
+          "course_id": "API_MID_004",
+          "title": "GitHub Copilot for Test Automation",
+          "platform": "GitHub Docs",
+          "url": "https://docs.github.com/en/copilot/using-github-copilot",
+          "duration_minutes": 240,
+          "mandatory": false,
+          "tags": ["copilot", "AI"],
+          "sequence_order": 4
+        },
+        {
+          "course_id": "API_MID_005",
+          "title": "Playwright Fixtures & POM",
+          "platform": "Playwright Docs",
+          "url": "https://playwright.dev/docs/test-fixtures",
+          "duration_minutes": 240,
+          "mandatory": false,
+          "tags": ["playwright", "POM", "fixtures"],
+          "sequence_order": 5
+        },
+        {
+          "course_id": "API_MID_006",
+          "title": "Docker for QA Engineers",
+          "platform": "Docker Docs",
+          "url": "https://docs.docker.com/get-started",
+          "duration_minutes": 240,
+          "mandatory": false,
+          "tags": ["docker", "CI/CD"],
+          "sequence_order": 6
+        },
+        {
+          "course_id": "API_MID_007",
+          "title": "GitHub Actions for Testing",
+          "platform": "GitHub Docs",
+          "url": "https://docs.github.com/en/actions",
+          "duration_minutes": 240,
+          "mandatory": false,
+          "tags": ["github actions", "CI/CD"],
+          "sequence_order": 7
+        }
+      ]
+    },
+
+    {
+      "profile_key": "playwright_mid",
+      "display_label": "Playwright Engineer (Mid-Level)",
+      "role_tags": ["playwright", "automation", "mid"],
+      "experience_level": "mid",
+      "primary_tool": "Playwright",
+      "target_role": "AI-Augmented Senior Automation Engineer",
+      "duration_weeks": "10–14",
+      "key_outcome": "Deepen Playwright expertise; integrate AI code generation; build CI/CD pipelines",
+      "courses": [
+        {
+          "course_id": "PW_MID_001",
+          "title": "Playwright Fixtures, POM & Parallel Runs",
+          "platform": "Playwright Docs",
+          "url": "https://playwright.dev/docs/test-fixtures",
+          "duration_minutes": 240,
+          "mandatory": false,
+          "tags": ["playwright", "POM", "fixtures", "parallel"],
+          "sequence_order": 1
+        },
+        {
+          "course_id": "PW_MID_002",
+          "title": "Playwright API Testing",
+          "platform": "Playwright Docs",
+          "url": "https://playwright.dev/docs/api-testing",
+          "duration_minutes": 240,
+          "mandatory": false,
+          "tags": ["playwright", "API testing"],
+          "sequence_order": 2
+        },
+        {
+          "course_id": "PW_MID_003",
+          "title": "Playwright Trace Viewer & Debugging",
+          "platform": "Playwright Docs",
+          "url": "https://playwright.dev/docs/trace-viewer",
+          "duration_minutes": 120,
+          "mandatory": false,
+          "tags": ["playwright", "debugging"],
+          "sequence_order": 3
+        },
+        {
+          "course_id": "PW_MID_004",
+          "title": "Awesome Playwright — Curated Resources",
+          "platform": "GitHub",
+          "url": "https://github.com/mxschmitt/awesome-playwright",
+          "duration_minutes": 60,
+          "mandatory": false,
+          "tags": ["playwright", "resources"],
+          "sequence_order": 4
+        },
+        {
+          "course_id": "PW_MID_005",
+          "title": "GitHub Copilot for Test Automation",
+          "platform": "GitHub Docs",
+          "url": "https://docs.github.com/en/copilot/using-github-copilot",
+          "duration_minutes": 240,
+          "mandatory": false,
+          "tags": ["copilot", "AI", "code generation"],
+          "sequence_order": 5
+        },
+        {
+          "course_id": "PW_MID_006",
+          "title": "OpenAI Prompt Engineering Guide",
+          "platform": "OpenAI Docs",
+          "url": "https://platform.openai.com/docs/guides/prompt-engineering",
+          "duration_minutes": 180,
+          "mandatory": false,
+          "tags": ["prompt engineering", "AI"],
+          "sequence_order": 6
+        },
+        {
+          "course_id": "PW_MID_007",
+          "title": "Docker for QA Engineers",
+          "platform": "Docker Docs",
+          "url": "https://docs.docker.com/get-started",
+          "duration_minutes": 240,
+          "mandatory": false,
+          "tags": ["docker", "CI/CD"],
+          "sequence_order": 7
+        },
+        {
+          "course_id": "PW_MID_008",
+          "title": "GitHub Actions for Testing",
+          "platform": "GitHub Docs",
+          "url": "https://docs.github.com/en/actions",
+          "duration_minutes": 240,
+          "mandatory": false,
+          "tags": ["github actions", "CI/CD"],
+          "sequence_order": 8
+        }
+      ]
+    },
+
+    {
+      "profile_key": "tosca_senior",
+      "display_label": "Tosca / Automation Engineer (Senior SDET)",
+      "role_tags": ["automation", "senior", "sdet"],
+      "experience_level": "senior",
+      "primary_tool": "Tosca",
+      "target_role": "Senior AI-Augmented Test Engineer",
+      "duration_weeks": "12–16",
+      "key_outcome": "Build AI-augmented Playwright frameworks; design self-healing + agentic test workflows",
+      "courses": [
+        {
+          "course_id": "SENIOR_001",
+          "title": "Playwright Test Agents (v1.56) — Official Docs",
+          "platform": "Playwright Docs",
+          "url": "https://playwright.dev/docs/test-agents",
+          "duration_minutes": 240,
+          "mandatory": false,
+          "tags": ["playwright", "agents", "AI testing"],
+          "sequence_order": 1
+        },
+        {
+          "course_id": "SENIOR_002",
+          "title": "Microsoft Playwright MCP Server",
+          "platform": "GitHub",
+          "url": "https://github.com/microsoft/playwright-mcp",
+          "duration_minutes": 240,
+          "mandatory": false,
+          "tags": ["playwright", "MCP", "agents"],
+          "sequence_order": 2
+        },
+        {
+          "course_id": "SENIOR_003",
+          "title": "AgentQL — Natural Language Selectors",
+          "platform": "AgentQL Docs",
+          "url": "https://docs.agentql.com",
+          "duration_minutes": 240,
+          "mandatory": false,
+          "tags": ["agentql", "natural language", "selectors", "playwright"],
+          "sequence_order": 3
+        },
+        {
+          "course_id": "SENIOR_004",
+          "title": "Agentic AI Test Automation with Playwright",
+          "platform": "Blog",
+          "url": "https://cegeka.com/en/blogs/agentic-ai-test-automation-with-playwright",
+          "duration_minutes": 60,
+          "mandatory": false,
+          "tags": ["agentic AI", "playwright", "architecture"],
+          "sequence_order": 4
+        },
+        {
+          "course_id": "SENIOR_005",
+          "title": "Hugging Face AI Agents Course",
+          "platform": "Hugging Face",
+          "url": "https://huggingface.co/learn/agents-course",
+          "duration_minutes": 900,
+          "mandatory": false,
+          "tags": ["AI agents", "LLM", "orchestration"],
+          "sequence_order": 5
+        },
+        {
+          "course_id": "SENIOR_006",
+          "title": "Model Context Protocol (MCP) — Full Docs",
+          "platform": "MCP Docs",
+          "url": "https://modelcontextprotocol.io",
+          "duration_minutes": 240,
+          "mandatory": false,
+          "tags": ["MCP", "AI protocol", "agents"],
+          "sequence_order": 6
+        },
+        {
+          "course_id": "SENIOR_007",
+          "title": "LangChain — Agentic Workflows",
+          "platform": "LangChain Docs",
+          "url": "https://python.langchain.com/docs/get_started",
+          "duration_minutes": 480,
+          "mandatory": false,
+          "tags": ["langchain", "agents", "orchestration"],
+          "sequence_order": 7
+        },
+        {
+          "course_id": "SENIOR_008",
+          "title": "Claude API for QA Agents",
+          "platform": "Anthropic Docs",
+          "url": "https://docs.anthropic.com",
+          "duration_minutes": 240,
+          "mandatory": false,
+          "tags": ["claude", "anthropic", "API", "agents"],
+          "sequence_order": 8
+        },
+        {
+          "course_id": "SENIOR_009",
+          "title": "LLM Evaluation with Promptfoo",
+          "platform": "GitHub",
+          "url": "https://github.com/promptfoo/promptfoo",
+          "duration_minutes": 240,
+          "mandatory": false,
+          "tags": ["LLM evaluation", "promptfoo", "testing"],
+          "sequence_order": 9
+        },
+        {
+          "course_id": "SENIOR_010",
+          "title": "PactFlow — Contract Testing",
+          "platform": "PactFlow Docs",
+          "url": "https://docs.pactflow.io",
+          "duration_minutes": 240,
+          "mandatory": false,
+          "tags": ["contract testing", "pact", "API"],
+          "sequence_order": 10
+        },
+        {
+          "course_id": "SENIOR_011",
+          "title": "Kubernetes Basics for QA Engineers",
+          "platform": "Kubernetes Docs",
+          "url": "https://kubernetes.io/docs/tutorials",
+          "duration_minutes": 360,
+          "mandatory": false,
+          "tags": ["kubernetes", "infrastructure", "CI/CD"],
+          "sequence_order": 11
+        }
+      ]
+    },
+
+    {
+      "profile_key": "playwright_senior",
+      "display_label": "Playwright Engineer (Senior SDET)",
+      "role_tags": ["playwright", "senior", "sdet"],
+      "experience_level": "senior",
+      "primary_tool": "Playwright",
+      "target_role": "Senior AI-Augmented Test Engineer",
+      "duration_weeks": "12–16",
+      "key_outcome": "Build self-healing agentic Playwright frameworks with MCP and LLM integration",
+      "courses": [
+        {
+          "course_id": "PW_SR_001",
+          "title": "Playwright Test Agents (v1.56) — Official Docs",
+          "platform": "Playwright Docs",
+          "url": "https://playwright.dev/docs/test-agents",
+          "duration_minutes": 240,
+          "mandatory": false,
+          "tags": ["playwright", "agents"],
+          "sequence_order": 1
+        },
+        {
+          "course_id": "PW_SR_002",
+          "title": "Microsoft Playwright MCP Server",
+          "platform": "GitHub",
+          "url": "https://github.com/microsoft/playwright-mcp",
+          "duration_minutes": 240,
+          "mandatory": false,
+          "tags": ["playwright", "MCP"],
+          "sequence_order": 2
+        },
+        {
+          "course_id": "PW_SR_003",
+          "title": "AgentQL — Natural Language Selectors",
+          "platform": "AgentQL Docs",
+          "url": "https://docs.agentql.com",
+          "duration_minutes": 240,
+          "mandatory": false,
+          "tags": ["agentql", "natural language"],
+          "sequence_order": 3
+        },
+        {
+          "course_id": "PW_SR_004",
+          "title": "Playwright AI Ecosystem 2026",
+          "platform": "Blog",
+          "url": "https://testdino.com/blog/playwright-ai-ecosystem",
+          "duration_minutes": 90,
+          "mandatory": false,
+          "tags": ["playwright", "AI", "ecosystem"],
+          "sequence_order": 4
+        },
+        {
+          "course_id": "PW_SR_005",
+          "title": "Playwright MCP + LLM Architecture",
+          "platform": "Blog",
+          "url": "https://scrolltest.com/playwright-mcp-llm-architecture-ai-augmented-test-automation",
+          "duration_minutes": 90,
+          "mandatory": false,
+          "tags": ["playwright", "MCP", "LLM", "architecture"],
+          "sequence_order": 5
+        },
+        {
+          "course_id": "PW_SR_006",
+          "title": "Hugging Face AI Agents Course",
+          "platform": "Hugging Face",
+          "url": "https://huggingface.co/learn/agents-course",
+          "duration_minutes": 900,
+          "mandatory": false,
+          "tags": ["AI agents", "LLM"],
+          "sequence_order": 6
+        },
+        {
+          "course_id": "PW_SR_007",
+          "title": "LangChain — Agentic Workflows",
+          "platform": "LangChain Docs",
+          "url": "https://python.langchain.com/docs/get_started",
+          "duration_minutes": 480,
+          "mandatory": false,
+          "tags": ["langchain", "orchestration"],
+          "sequence_order": 7
+        },
+        {
+          "course_id": "PW_SR_008",
+          "title": "LLM Evaluation with Promptfoo",
+          "platform": "GitHub",
+          "url": "https://github.com/promptfoo/promptfoo",
+          "duration_minutes": 240,
+          "mandatory": false,
+          "tags": ["LLM evaluation", "promptfoo"],
+          "sequence_order": 8
+        },
+        {
+          "course_id": "PW_SR_009",
+          "title": "BearQ by SmartBear — Early Access",
+          "platform": "SmartBear",
+          "url": "https://smartbear.com/product/bearq",
+          "duration_minutes": 120,
+          "mandatory": false,
+          "tags": ["bearq", "SmartBear", "autonomous QA"],
+          "sequence_order": 9
+        },
+        {
+          "course_id": "PW_SR_010",
+          "title": "Kubernetes Basics for QA Engineers",
+          "platform": "Kubernetes Docs",
+          "url": "https://kubernetes.io/docs/tutorials",
+          "duration_minutes": 360,
+          "mandatory": false,
+          "tags": ["kubernetes", "infrastructure"],
+          "sequence_order": 10
+        }
+      ]
+    },
+
+    {
+      "profile_key": "tosca_architect",
+      "display_label": "Automation / Tosca (Test Lead & Architect)",
+      "role_tags": ["architect", "lead", "tosca"],
+      "experience_level": "architect",
+      "primary_tool": "Tosca",
+      "target_role": "Principal AI QA Architect",
+      "duration_weeks": "14–20",
+      "key_outcome": "Define org-wide AI QA strategy; architect agentic testing pipelines; position SmartBear + Playwright stack to clients",
+      "courses": [
+        {
+          "course_id": "ARCH_001",
+          "title": "Playwright Framework Architecture — Best Practices",
+          "platform": "Playwright Docs",
+          "url": "https://playwright.dev/docs/best-practices",
+          "duration_minutes": 240,
+          "mandatory": false,
+          "tags": ["playwright", "architecture", "best practices"],
+          "sequence_order": 1
+        },
+        {
+          "course_id": "ARCH_002",
+          "title": "Playwright MCP — Custom Agent Design",
+          "platform": "GitHub",
+          "url": "https://github.com/microsoft/playwright-mcp",
+          "duration_minutes": 360,
+          "mandatory": false,
+          "tags": ["playwright", "MCP", "agents", "architecture"],
+          "sequence_order": 2
+        },
+        {
+          "course_id": "ARCH_003",
+          "title": "Playwright Build vs Buy 2026",
+          "platform": "Blog",
+          "url": "https://bug0.com/blog/playwright-mcp-changes-ai-testing-2026",
+          "duration_minutes": 90,
+          "mandatory": false,
+          "tags": ["playwright", "strategy", "build vs buy"],
+          "sequence_order": 3
+        },
+        {
+          "course_id": "ARCH_004",
+          "title": "12-Factor Agents — Agent Design Principles",
+          "platform": "GitHub",
+          "url": "https://github.com/humanlayer/12-factor-agents",
+          "duration_minutes": 240,
+          "mandatory": false,
+          "tags": ["AI agents", "design principles", "architecture"],
+          "sequence_order": 4
+        },
+        {
+          "course_id": "ARCH_005",
+          "title": "Hugging Face AI Agents Course",
+          "platform": "Hugging Face",
+          "url": "https://huggingface.co/learn/agents-course",
+          "duration_minutes": 900,
+          "mandatory": false,
+          "tags": ["AI agents", "LLM", "advanced"],
+          "sequence_order": 5
+        },
+        {
+          "course_id": "ARCH_006",
+          "title": "MCP Protocol — Deep Dive",
+          "platform": "MCP Docs",
+          "url": "https://modelcontextprotocol.io",
+          "duration_minutes": 360,
+          "mandatory": false,
+          "tags": ["MCP", "protocol", "architecture"],
+          "sequence_order": 6
+        },
+        {
+          "course_id": "ARCH_007",
+          "title": "LangChain — Orchestration & RAG Patterns",
+          "platform": "LangChain Docs",
+          "url": "https://python.langchain.com/docs/get_started",
+          "duration_minutes": 600,
+          "mandatory": false,
+          "tags": ["langchain", "RAG", "orchestration"],
+          "sequence_order": 7
+        },
+        {
+          "course_id": "ARCH_008",
+          "title": "OpenAI Cookbook — Agentic Patterns",
+          "platform": "GitHub",
+          "url": "https://github.com/openai/openai-cookbook",
+          "duration_minutes": 300,
+          "mandatory": false,
+          "tags": ["OpenAI", "agentic patterns", "cookbook"],
+          "sequence_order": 8
+        },
+        {
+          "course_id": "ARCH_009",
+          "title": "LLM Evaluation with Promptfoo",
+          "platform": "GitHub",
+          "url": "https://github.com/promptfoo/promptfoo",
+          "duration_minutes": 240,
+          "mandatory": false,
+          "tags": ["LLM evaluation", "promptfoo", "governance"],
+          "sequence_order": 9
+        },
+        {
+          "course_id": "ARCH_010",
+          "title": "SmartBear BearQ — Autonomous QA Platform",
+          "platform": "SmartBear",
+          "url": "https://smartbear.com/product/bearq",
+          "duration_minutes": 240,
+          "mandatory": false,
+          "tags": ["bearq", "autonomous QA", "SmartBear"],
+          "sequence_order": 10
+        },
+        {
+          "course_id": "ARCH_011",
+          "title": "AI QA Strategy & Governance — Ministry of Testing",
+          "platform": "Ministry of Testing",
+          "url": "https://ministryoftesting.com",
+          "duration_minutes": 120,
+          "mandatory": false,
+          "tags": ["AI governance", "QA strategy", "leadership"],
+          "sequence_order": 11
+        },
+        {
+          "course_id": "ARCH_012",
+          "title": "Playwright AI Test Generation Guide 2026",
+          "platform": "Blog",
+          "url": "https://blog.buildbetter.ai/playwright-test-generation-with-ai-complete-2026-guide",
+          "duration_minutes": 90,
+          "mandatory": false,
+          "tags": ["playwright", "AI", "test generation", "2026"],
+          "sequence_order": 12
+        }
+      ]
+    },
+
+    {
+      "profile_key": "playwright_architect",
+      "display_label": "Playwright Engineer (Test Lead & Architect)",
+      "role_tags": ["architect", "lead", "playwright"],
+      "experience_level": "architect",
+      "primary_tool": "Playwright",
+      "target_role": "Principal AI QA Architect",
+      "duration_weeks": "14–20",
+      "key_outcome": "Design org-wide AI-first test strategy; lead agentic Playwright pipelines; mentor teams on AI QA governance",
+      "courses": [
+        {
+          "course_id": "PW_ARCH_001",
+          "title": "Playwright Framework Architecture — Best Practices",
+          "platform": "Playwright Docs",
+          "url": "https://playwright.dev/docs/best-practices",
+          "duration_minutes": 240,
+          "mandatory": false,
+          "tags": ["playwright", "architecture", "best practices"],
+          "sequence_order": 1
+        },
+        {
+          "course_id": "PW_ARCH_002",
+          "title": "Playwright MCP — Custom Agent Design",
+          "platform": "GitHub",
+          "url": "https://github.com/microsoft/playwright-mcp",
+          "duration_minutes": 360,
+          "mandatory": false,
+          "tags": ["playwright", "MCP", "agents"],
+          "sequence_order": 2
+        },
+        {
+          "course_id": "PW_ARCH_003",
+          "title": "12-Factor Agents — Agent Design Principles",
+          "platform": "GitHub",
+          "url": "https://github.com/humanlayer/12-factor-agents",
+          "duration_minutes": 240,
+          "mandatory": false,
+          "tags": ["AI agents", "design principles"],
+          "sequence_order": 3
+        },
+        {
+          "course_id": "PW_ARCH_004",
+          "title": "Hugging Face AI Agents Course",
+          "platform": "Hugging Face",
+          "url": "https://huggingface.co/learn/agents-course",
+          "duration_minutes": 900,
+          "mandatory": false,
+          "tags": ["AI agents", "LLM"],
+          "sequence_order": 4
+        },
+        {
+          "course_id": "PW_ARCH_005",
+          "title": "MCP Protocol — Deep Dive",
+          "platform": "MCP Docs",
+          "url": "https://modelcontextprotocol.io",
+          "duration_minutes": 360,
+          "mandatory": false,
+          "tags": ["MCP", "protocol"],
+          "sequence_order": 5
+        },
+        {
+          "course_id": "PW_ARCH_006",
+          "title": "LangChain — Orchestration & RAG Patterns",
+          "platform": "LangChain Docs",
+          "url": "https://python.langchain.com/docs/get_started",
+          "duration_minutes": 600,
+          "mandatory": false,
+          "tags": ["langchain", "RAG"],
+          "sequence_order": 6
+        },
+        {
+          "course_id": "PW_ARCH_007",
+          "title": "SmartBear Application Integrity Core",
+          "platform": "SmartBear Docs",
+          "url": "https://smartbear.com/solutions",
+          "duration_minutes": 120,
+          "mandatory": false,
+          "tags": ["SmartBear", "application integrity"],
+          "sequence_order": 7
+        },
+        {
+          "course_id": "PW_ARCH_008",
+          "title": "LLM Evaluation with Promptfoo",
+          "platform": "GitHub",
+          "url": "https://github.com/promptfoo/promptfoo",
+          "duration_minutes": 240,
+          "mandatory": false,
+          "tags": ["LLM evaluation", "promptfoo"],
+          "sequence_order": 8
+        },
+        {
+          "course_id": "PW_ARCH_009",
+          "title": "AI QA Strategy & Governance — Ministry of Testing",
+          "platform": "Ministry of Testing",
+          "url": "https://ministryoftesting.com",
+          "duration_minutes": 120,
+          "mandatory": false,
+          "tags": ["AI governance", "QA strategy"],
+          "sequence_order": 9
+        }
+      ]
+    }
+
+  ]
+}
